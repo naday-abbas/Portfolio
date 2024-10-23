@@ -1,0 +1,411 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+
+.header .nav-link:hover{
+  color: black;
+}
+
+/* ---------------- Home ----------------*/
+.home{
+  padding-block: 110px;
+}
+
+.pic1 {
+  width: 450px;
+}
+
+.column {
+  align-content: center;
+  justify-content: center;
+  font-weight: 600;
+}
+
+@media screen and (min-width: 768px) {
+  div.column {
+
+  }
+}
+
+@media screen and (max-width: 767px) {
+  div.column {
+
+  }
+}
+
+.column span {
+  font-weight: bold;
+  color: orangered;
+}
+
+.column p {
+  font-size: 1.5rem;
+  font-weight: 200;
+}
+
+@media screen and (min-width: 768px) {
+  div.column {
+    font-size: 45px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  div.column {
+    font-size: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  div.column span {
+    font-size: 60px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  div.column span {
+    font-size: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  div.column p {
+    font-size: 25px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  div.column p {
+    font-size: 18px;
+  }
+}
+
+/* ---------------- About ----------------*/
+
+
+.column3 {
+  width: 100%;
+  padding-block: 110px;
+}
+.about{
+  padding-block: 20px;
+}
+
+.about p {
+  font-size: 1.5rem;
+  font-weight: 200;
+  width: 100%;
+  display: table;
+  margin: 0 auto;
+}
+
+.column3{
+  align-content: center;
+}
+
+
+@media screen and (max-width: 1199px) {
+  div.column3 p {
+    font-size: 17px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  div.column3 p {
+    font-size: 25px;
+  }
+}
+
+
+
+/* ---------------- Skills ----------------*/
+
+
+.skills {
+  justify-content: center;
+  align-self: center;
+  align-items: center;
+  align-content: center;
+  padding-block: 20px;
+  width: 100%;
+}
+
+.heading {
+  cursor: pointer;
+  color: rgb(255, 98, 0);
+  display: table;
+  margin: 0 auto;
+  font-size: 3rem;
+  font-weight:600;
+  box-shadow: inset 0 0 0 0 rgb(255, 98, 0);
+  padding: 0 .25rem;
+  transition: color 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
+}
+
+span.heading:hover {
+  box-shadow: inset 240px 0 0 0 rgb(255, 98, 0);
+  color: white;
+}
+
+.heading {transition-timing-function: ease-out;}
+
+.flip-card {
+  background-color: transparent;
+  height: 250px;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.flip-card i{
+  font-size: 100px;
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  background-color: rgb(251, 138, 0);
+  color: black;
+  line-height: 50px;
+  align-content: center;
+  border-radius: 20px;
+
+}
+
+/* Style the back side */
+.flip-card-back {
+  background-color: rgb(251, 105, 0);
+  color: white;
+  transform: rotateY(180deg);
+  align-content: center;
+  border-radius: 20px;
+}
+
+.card {
+  background-color: rgb(255, 87, 20);
+  color: black;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  height: 200px;
+  text-align: center;
+  line-height: 40px;
+  padding: 15px;
+}
+.card:hover{
+  transform: rotateY(180deg);
+}
+.card-group {
+  gap: 100px;
+
+}
+
+.column2 {
+  float: left;
+  font-weight: 600;
+  align-content: center;
+  justify-content: center;
+  align-self: center;
+  padding: 15px;
+}
+
+
+/* Clear floats after the columns */
+.row2:after {
+  content: "";
+  display: table;
+  clear: both;
+
+}
+
+@media screen and (max-width: 767px) {
+  div.column2 {
+    width: 100%;
+    height: 35vh;
+    display: block;
+    align-content: center;
+  justify-content: center;
+  align-self: center;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  div.skills {
+    margin-top: 100px;
+  }
+}
+
+/* ---------------- Project ----------------*/
+
+.project {
+  justify-content: center;
+  align-self: center;
+  align-items: center;
+  align-content: center;
+  padding-block: 10px;
+  width: 100%;
+  padding-bottom: 100px;
+}
+
+.proj{
+  padding-block: 40px;
+}
+
+.project li{
+  font-size: xx-large;
+  display: inline-block;
+}
+
+.project li i{
+  padding: 10px;
+}
+
+.proj-img{
+  border: 1px solid rgb(0, 0, 0);
+}
+
+.live-btn{
+  border: 1px solid rgb(255, 89, 0);
+  height: 35px;
+  color: black;
+  margin-top: -16px;
+}
+
+.live-btn:hover{
+  background-color: rgba(255, 89, 0, 0.911);
+  text-align: right;
+  color: white;
+  transition-duration: 200ms;
+}
+/* ---------------- Contact ----------------*/
+
+.contact{
+  padding-block: 40px;
+  padding-bottom: 100px;
+}
+
+.contact i{
+  font-size: 30px;
+  display: inline-flex;
+  padding-block: 20px;
+}
+
+.contact a:hover{
+  color: orangered;
+  transition: 150ms;
+}
+
+
+.contact i p{
+  font-size: 30px;
+  padding-left: 15px;
+
+}
+
+@media screen and (max-width: 991px) {
+  div.contact i, div.contact p {
+    font-size: 18px;
+  }
+}
+
+.contact input{
+  height: 50px;
+  width: 75%;
+  font-size: 20px;
+  font-weight: lighter;
+  margin: 15px;
+  border-radius: 5px;
+  border: 1px solid black;
+  padding-left: 5px;
+}
+
+.input{
+  padding-block: 10px;
+}
+
+.contact-list{
+  padding-block: 80px;
+}
+
+.contact a{
+  color: rgb(36, 36, 36);
+}
+
+.resume{
+  padding-block: 10px;
+}
+
+.msg-btn{
+  background-color: rgb(231, 231, 231);
+  width: 200px;
+  height: 55px;
+  color: black;
+}
+
+.msg-btn:hover{
+  background-color: rgb(195, 195, 195);
+}
+
+.resume-btn{
+  background-color: rgb(255, 89, 0);
+  width: 300px;
+  height: 60px;
+  color: white;
+}
+
+.resume-btn:hover{
+  background-color: rgb(245, 65, 0);
+  color: rgb(241, 241, 241);
+}
+
+/* ---------------- Footer ----------------*/
+.footer{
+  height: 150px;
+  background-color: #fa560f;
+  width: 100%;
+  align-content: center;
+  color: white;
+  font-size: 23px;
+}
+
+.social-links i{
+  margin: 2px;
+  transition: 0.5s;
+  cursor: pointer;
+  color: white;
+}
+
+.social-links i:hover{
+  color: #a33f00;
+}
+
+.social-links p{
+  font-size: 16px;
+}
+
