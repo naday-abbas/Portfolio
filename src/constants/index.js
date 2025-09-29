@@ -4,7 +4,7 @@ import project3 from "../assets/projects/project-3.webp";
 import project4 from "../assets/projects/project-4.webp";
 
 export const HERO_CONTENT = `Hey, I'm Naday, a passionate web developer with strong skills in React, HTML, CSS, and JavaScript, focused on creating clean, responsive, and userfriendly web experiences. Excited to contribute to real-world projects
-and grow as a developer. I’m eager to join a team as an intern to enhance
+and grow as a developer. I’m eager to join a team to enhance
 my skills, and grow with the company.
 `;
 
